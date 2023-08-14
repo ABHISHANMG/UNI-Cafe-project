@@ -78,26 +78,13 @@ const Home = () => {
           />
         ))}
       </ul>
-      {!loading ? (
-        <div className="loader-container">
-          <TailSpin
-            height="80"
-            width="80"
-            color="#E32227"
-            ariaLabel="tail-spin-loading"
-            radius="1"
-            wrapperStyle={{}}
-            wrapperClass=""
-            visible={true}
-          />
-        </div>
-      ) : (
+      {
         <ul className="food-items-un-ordered-container">
           {filteredFormattedItems.map((eachItem) => (
             <FoodItems key={eachItem.dishId} eachItem={eachItem} />
           ))}
         </ul>
-      )}
+      }
     </>
   );
 };
