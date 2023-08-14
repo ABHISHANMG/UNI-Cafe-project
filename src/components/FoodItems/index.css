@@ -1,0 +1,115 @@
+.foodItem-container{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center ;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+
+
+.food-image-size{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.quantity-container-buttons{
+    background-color: green;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    padding: 5px;
+    height: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border-width: 0px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+.dis-name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.dish-description{
+    color: #36454F;
+    font-size: 15px;
+
+}
+
+.dish-calories{
+    color: #FFBF00;
+    font-weight: bold;
+    font-family: roboto;
+
+}
+
+.description-container{
+    width: 500px;
+}
+
+.not-available{
+    color: red;
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .food-image-size{
+        width: 100px;
+        height: 100px;
+    }
+    .dis-name{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    
+    }
+
+    .dish-description{
+        color: #36454F;
+        font-size: 10px;
+    
+    }
+    .description-container{
+        width: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .food-image-size{
+        width: 100px;
+        height: 100px;
+    }
+    .dis-name{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    
+    }
+
+    .dish-description{
+        color: #36454F;
+        font-size: 10px;
+    
+    }
+    .description-container{
+        width: 250px;
+    }
+    
+  }

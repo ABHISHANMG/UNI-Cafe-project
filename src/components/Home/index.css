@@ -1,0 +1,39 @@
+.un-order-tabs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+
+.food-items-un-ordered-container{
+  padding: 20px;
+}
+
+
+.loader-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .un-order-tabs-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .un-order-tabs-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
